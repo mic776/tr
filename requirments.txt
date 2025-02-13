@@ -1,0 +1,6 @@
+pybit
+pandas_ta
+time
+threading
+asyncio
+aiogram
