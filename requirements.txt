@@ -1,2 +1,3 @@
-pybit
+numpy==1.23.5
 pandas_ta
+pybit
