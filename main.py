@@ -1,9 +1,10 @@
 from pybit.unified_trading import HTTP
 from time import sleep
 import pandas_ta as ta
+import os
 
 #TREADER
-exchange = HTTP(api_key = "vY8a2Xenfp9ScqMuZb", api_secret = "45iApSvrUa2koR77kjm6PglnbgOZDbj5Yj2b")
+exchange = HTTP(api_key = os.getenv("API_K"), api_secret = os.getenv("SECRET_K"))
 def CollectLast():
     global df
     response = exchange.get_kline(symbol = "TONUSDT", category = "spot", interval="1", limit=100)["result"]["list"]
